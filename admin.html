@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Complaints List</h1>
+    <table id="complaints-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Order ID</th>
+                <th>Tracking ID</th>
+                <th>UTR Number</th>
+                <th>Complaint</th>
+                <th>Actions</th> <!-- Added Actions column -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+    <!-- Reply Popup Form -->
+    <div id="replyPopup" class="popup">
+        <form id="replyForm">
+            <h2>Reply to Complaint</h2>
+            <input type="hidden" id="replyId" name="replyId">
+            <label for="replyMessage">Reply Message:</label>
+            <textarea id="replyMessage" name="replyMessage" required></textarea>
+            <button type="submit">Send Reply</button>
+            <button type="button" id="closeReplyPopup">Cancel</button>
+        </form>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

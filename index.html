@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Ticket</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <button id="addTicketBtn">Add Ticket</button>
+    
+    <div id="popupForm" class="popup">
+        <form id="ticketForm">
+            <label for="trackingId">Tracking ID:</label>
+            <input type="text" id="trackingId" required>
+            
+            <label for="orderId">Order ID:</label>
+            <input type="text" id="orderId" required>
+            
+            <label for="utrNumber">UTR Number:</label>
+            <input type="text" id="utrNumber" required>
+            
+            <label for="complaint">Complaint:</label>
+            <textarea id="complaint" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <h1>Complaints List</h1>
+    <table id="complaints-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Order ID</th>
+                <th>Tracking ID</th>
+                <th>UTR Number</th>
+                <th>Complaint</th>
+                <th>Response</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Message Section -->
+    <div id="messageSection" class="message-section">
+        <p id="message">Here you can display messages or notifications.</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
